@@ -3,7 +3,7 @@ if ! [ -x "$(command -v git)" ]; then
   echo 'Error: git is not installed.'
   echo -n 'Do you want install git? [y/n] '
   read ANSW
-  if [ $ANSW = "y" ]; then
+  if [[ $ANSW = "y" ]]; then
   		apt install git
   	else
   		exit

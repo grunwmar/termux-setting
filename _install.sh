@@ -4,7 +4,6 @@ apt upgrade
 apt update
 
 # add repos
-apt install root-repo
 apt install science-repo
 
 # install some important apps

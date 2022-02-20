@@ -1,13 +1,10 @@
 #!/bin/bash
-if ! [ -x "$(command -v git)" ]; then
-  echo 'Error: git is not installed.'
-  echo -n 'Do you want install git? [y/n] '
-  read ANSW
-  if [[ $ANSW = "y" ]]; then
-  		apt install git
-  	else
-  		exit
-  fi
+echo "Packages root-repo and git needs to be installed"
+echo "  [y] for continue: "
+read X
+
+if [[ $Y != "y"]]; then
+	exit
 fi
 
 mkdir './.git_termux-setting'

@@ -4,4 +4,5 @@ apt install python
 apt install zsh
 apt install tmux
 
-bash place-files.sh
+# copy source files to its directories
+bash sources.sh

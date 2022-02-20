@@ -3,7 +3,7 @@ echo "Packages root-repo and git needs to be installed"
 echo "  [y] for continue: "
 read X
 
-if [[ $Y != "y" ]]; then
+if [[ $X != "y" ]]; then
 	exit
 fi
 

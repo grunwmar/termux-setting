@@ -1,11 +1,5 @@
 #!/bin/bash
 echo "Packages root-repo and git needs to be installed"
-echo "  [y] for continue: "
-read X
-
-if [[ $X != "y" ]]; then
-	exit
-fi
 
 mkdir './.git_termux-setting'
 cd './.git_termux-setting'

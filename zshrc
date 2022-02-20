@@ -1,0 +1,3 @@
+PROMPT=$'\n'"[%Bzsh%b %*]"$'\n'
+PROMPT+=" %F{blue}%1~%f %% "
+

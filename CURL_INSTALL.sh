@@ -1,5 +1,4 @@
 #!/bin/bash
-git clone git@github.com:grunwmar/termux-setting.git ./_termux-setting
-
-cd ./_termux-setting
+git clone git@github.com:grunwmar/termux-setting.git ./termux-setting
+cd ./termux-setting
 bash ./INSTALL.sh

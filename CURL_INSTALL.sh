@@ -1,7 +1,7 @@
 #!/bin/bash
 git clone git@github.com:grunwmar/termux-setting.git
 wait _
-cd ./termux-setting
+cd ./_termux-setting
 bash ./INSTALL.sh
 cd ..
-rm -rf ./termux-setting
+rm -rf ./_termux-setting

@@ -1,1 +1,3 @@
-sources/zshrc --> $HOME/.tmx_config/zshrc_replaced
+sources/zshrc --> $HOME/.tmx_config/zshrc
+sources/bashrc --> $HOME/.tmx_config/zshrc
+sources/termux.properties --> $HOME/.tmx_config/termux.properties

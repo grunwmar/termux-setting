@@ -19,8 +19,8 @@ echo $PWD
 BASE='https://raw.githubusercontent.com/grunwmar/termux-setting/main'
 
 
-curl -s "$BASE/SOURCES" > "SOURCES"
-curl -s "$BASE/DIST" > "DIST"
+curl -s "$BASE/SOURCES" > "./SOURCES"
+curl -s "$BASE/DIST" > "./DIST"
 
 OLDIFS=$IFS; IFS=$'\n';
 

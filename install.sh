@@ -53,6 +53,10 @@ cat "$BASE/DIST" | while read ROW; do
     FILE_1="$BASE/sources/${BASH_REMATCH[1]}"
     FILE_2="${BASH_REMATCH[2]}"
 
+    if [[ $FILE_1 = $FILE_2 ]]; then
+        continue
+    fi
+
     cp "$FILE_1" "$FILE_2"
 done
 

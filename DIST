@@ -1,5 +1,5 @@
 sources/zshrc --> .zshrc
 sources/bashrc --> .bashrc
 sources/termux.properties --> .termux/termux.properties
-source/extensions --> .texmux-setting/sources/extensions
-sources/git_shortcuts --> .texmux-setting/sources/.git_shortcuts
+source/extensions --> .tmx_config/sources/extensions
+sources/git_shortcuts --> .tmx_config/sources/.git_shortcuts

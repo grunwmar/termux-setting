@@ -19,7 +19,8 @@ echo $PWD
 BASE='https://raw.githubusercontent.com/grunwmar/termux-setting/main'
 
 
-#curl -s "$BASE/sources.txt"
+curl -s "$BASE/SOURCES"
+curl -s "$BASE/DIST"
 
 OLDIFS=$IFS; IFS=$'\n';
 
@@ -34,7 +35,7 @@ cat './SOURCES' | while read FILE; do
     fi
 
     echo "downloading $FILE"
-    # curl -s "$BASE"/"sources/"$FILE > "./sources/$FILE"
+    curl -s "$BASE"/"sources/"$FILE > "./sources/$FILE"
 
 done
 

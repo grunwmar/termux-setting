@@ -14,5 +14,5 @@ target location. \
 e. g. `zshrc --> ~/.zshrc`
 
 1. **WARNING** Script will override original `.bashrc` and/or `.zshrc` files in your home directory.\
-2. **WARNING** `.bashrc` is not optionally working and is messing a bash prompt at this time.
+2. **WARNING** `.bashrc` is not correctly working and is messing a bash prompt at this time, is its distribution is disabled at this time.
 

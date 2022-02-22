@@ -42,7 +42,7 @@ done
 cd $HOME
 
 REGEX='(.*) --> (.*)'
-cat "../DIST" | while read ROW; do
+cat ".tmx_config/DIST" | while read ROW; do
 
     if [[ "$ROW" = "#"* || -z "$ROW" ]]; then
         continue

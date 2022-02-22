@@ -5,3 +5,5 @@
 
 Packages `curl` has to be already installed.
 
+*WARNING* Script will override original .bashrc and/or .zshrc files in your home directory.
+

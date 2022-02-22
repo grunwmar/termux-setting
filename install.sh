@@ -49,7 +49,7 @@ cat ".tmx_config/DIST" | while read ROW; do
     fi
 
     [[ $ROW =~ $REGEX ]] || continue
-    FILE_1="${BASH_REMATCH[1]}"
+    FILE_1=".tmx_config/sources/${BASH_REMATCH[1]}"
     FILE_2="${BASH_REMATCH[2]}"
 
     cp "$FILE_1" "$FILE_2"

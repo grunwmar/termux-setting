@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# git shortcuts
+source $HOME/.termux-setting/sources/git_shortcuts

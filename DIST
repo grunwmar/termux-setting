@@ -1,3 +1,5 @@
 sources/zshrc --> $HOME/.zshrc
 sources/bashrc --> $HOME/.bashrc
 sources/termux.properties --> $HOME/.termux/termux.properties
+source/extensions --> $HOME/.texmux-setting/sources/extensions
+sources/git_shortcuts --> $HOME/.texmux-setting/sources/.git_shortcuts

@@ -39,9 +39,10 @@ cat './SOURCES' | while read FILE; do
 
 done
 
+cd $HOME
 
 REGEX='(.*) --> (.*)'
-cat "./DIST" | while read ROW; do
+cat "../DIST" | while read ROW; do
 
     if [[ "$ROW" = "#"* || -z "$ROW" ]]; then
         continue

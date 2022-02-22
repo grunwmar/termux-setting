@@ -41,7 +41,7 @@ done
 
 
 REGEX='(.*) --> (.*)'
-envsubst < "./DIST" | while read ROW; do
+cat "./DIST" | while read ROW; do
 
     if [[ "$ROW" = "#"* || -z "$ROW" ]]; then
         continue

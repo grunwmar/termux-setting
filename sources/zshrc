@@ -1,4 +1,4 @@
-PROMPT="[%Bzsh%b %* ]"
+PROMPT="[%Bzsh%b %*] "
 
 # To disable time-stamp uncomment a line below
 # PS1=""

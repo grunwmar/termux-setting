@@ -1,4 +1,9 @@
-PROMPT=$'\n'"[%Bzsh%b %*]"$'\n'
+PROMPT="[%Bzsh%b %* ]"
+
+# To disable time-stamp uncomment a line below
+# PS1=""
+
 PROMPT+="%F{blue}%1~%f %% "
+
 alias ls="ls --color=no"
 

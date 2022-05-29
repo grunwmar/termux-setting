@@ -14,3 +14,7 @@ or download [install.sh](https://raw.githubusercontent.com/grunwmar/termux-setti
 (or https://grunwmar.cz/termux/inst-zsh)
 
 Packages `root-repo`, `curl`, `zsh` and `git`  has to be already installed.
+Also `oh-my-zsh`
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```

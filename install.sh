@@ -1,8 +1,5 @@
 #!/bin/bash
 
-pkg upgrade
-pkg install zsh
-
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 URLBASE='https://raw.githubusercontent.com/grunwmar/termux-setting/new-main'

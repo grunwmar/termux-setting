@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 ln -s ~/storage/shared/Termux ~/user
+clear
 
 alias tl="zsh ~/.tmux_layout.sh"
 alias ve="zsh ~/.venv_run.sh $@"
@@ -110,9 +111,4 @@ alias py="python $@"
 alias ..="cd .."
 alias wd="watch -n 1 'ls -a'"
 
-WORK_SPACE="storage/shared/Termux_"
-if [ -d $WORK_SPACE ]; then
-	cd $WORK_SPACE
-	clear
-fi
 

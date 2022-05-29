@@ -8,7 +8,7 @@ echo $PWD
 curl -s "$URLBASE/sources/.zshrc" > ".zshrc"
 curl -s "$URLBASE/sources/.tmux_layout.sh" > ".tmux_layout.sh"
 curl -s "$URLBASE/sources/.venv_run.sh" > ".venv_run.sh"
-curl -s "$URLBASE/sources/.termux.properties" > ".termux/termux.properties"
+curl -s "$URLBASE/sources/termux.properties" > ".termux/termux.properties"
 curl -s "$URLBASE/sources/.tmux_layout.sh" > ".tmux_layout.sh"
 curl -s "$URLBASE/sources/tsimplicity.zsh-theme" > ".oh-my-zsh/themes/tsimplicity.zsh-theme"
 

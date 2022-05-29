@@ -17,6 +17,12 @@ read A
 
 if [ "$A" = "y" ]; then
     termux-setup-storage
+    cd storage/shared
+    mkdir Termux
+    ln -s ~/storage/shared/Termux ~/user
 fi
+
+
+
 
 

@@ -1,8 +1,0 @@
-#!/bin/bash
-
-alias gadd="git add ."
-alias gcmt="git commit -m"
-alias gpsh="git push"
-alias gftc="git fetch"
-alias gsta="git status"
-alias gpul="git pull"

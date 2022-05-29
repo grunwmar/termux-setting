@@ -1,66 +1,26 @@
 #!/bin/bash
+pkg install curl
+pkg install zsh
 
-BASE=".tmx_config"
-URLBASE='https://raw.githubusercontent.com/grunwmar/termux-setting/main'
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
-new_dir () {
-    if [[ ! -d "$1" ]]; then
-        mkdir "$1"
-    fi
-}
-
+URLBASE='https://raw.githubusercontent.com/grunwmar/termux-setting/new-main'
 
 cd $HOME
-echo -n $PWD "--> "
-
-new_dir "$BASE"
-cd "$BASE"
-
 echo $PWD
 
-curl -s "$URLBASE/SOURCES" > "./SOURCES"
-curl -s "$URLBASE/DIST" > "./DIST"
+curl -s "$URLBASE/sources/.zshrc" > ".zshrc"
+curl -s "$URLBASE/sources/.tmux_layout.sh" > ".tmux_layout.sh"
+curl -s "$URLBASE/sources/.venv_run.sh" > ".venv_run.sh"
+curl -s "$URLBASE/sources/.termux.properties" > ".termux/termux.properties"
+curl -s "$URLBASE/sources/.tmux_layout.sh" > ".tmux_layout.sh"
+curl -s "$URLBASE/sources/tsimplicity.zsh-theme" > ".oh-my-zsh/themes/tsimplicity.zsh-theme"
 
-OLDIFS=$IFS; IFS=$'\n';
+echo -n "Access external filesystem (SD card)? [y/n] "
+read A
 
-new_dir './sources'
-
-echo ""
-
-cat './SOURCES' | while read FILE; do
-
-    if [[ "$FILE" = "#"* || -z "$FILE" ]]; then
-        continue
-    fi
-
-    echo "downloading $FILE"
-    curl -s "$URLBASE"/"sources/"$FILE > "./sources/$FILE"
-
-done
-
-cd $HOME
-
-REGEX='(.*) --> (.*)'
-cat "$BASE/DIST" | while read ROW; do
-
-    if [[ "$ROW" = "#"* || -z "$ROW" ]]; then
-        continue
-    fi
-
-    [[ $ROW =~ $REGEX ]] || continue
-
-    FILE_1="$BASE/sources/${BASH_REMATCH[1]}"
-    FILE_2="${BASH_REMATCH[2]}"
-
-    if [[ $FILE_1 = $FILE_2 ]]; then
-        continue
-    fi
-
-    cp "$FILE_1" "$FILE_2"
-done
-
-IFS=$OLDIFS
-
+if [ "$A" = "y" ]; then
+    termux-setup-storage
+fi
 
 

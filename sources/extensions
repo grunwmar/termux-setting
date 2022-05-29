@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# git shortcuts
-source $HOME/.tmx_config/sources/git_shortcuts

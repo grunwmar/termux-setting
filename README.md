@@ -2,17 +2,9 @@
 **Installation**
 
 ```bash
-curl -s 'https://raw.githubusercontent.com/grunwmar/termux-setting/main/install.sh' | bash
+curl -s 'https://raw.githubusercontent.com/grunwmar/termux-setting/new-main/install.sh'
 ```
 
-or download [install.sh](https://raw.githubusercontent.com/grunwmar/termux-setting/main/install.sh) script and run it manually.
+or download [install.sh](https://raw.githubusercontent.com/grunwmar/termux-setting/new-main/install.sh) script and run it manually.
 
-Packages `curl` has to be already installed.
-
-Files that has to be outside `.tmx_config/sources` has to be reffered in `./tmx_config/DIST` together with its
-target location. \
-e. g. `zshrc --> ~/.zshrc`
-
-1. **WARNING** Script will override original `.bashrc` and/or `.zshrc` files in your home directory.\
-2. **WARNING** `.bashrc` is not correctly working and is messing a bash prompt at this time, is its distribution is disabled at this time.
-
+Packages `curl` and `zsh` has to be already installed.
